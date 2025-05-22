@@ -4,22 +4,23 @@ var answer = string.Empty;
 var options = new List<string> { "s", "n" };
 do
 {
-    var quantity = ConsoleExtension.GetFloat("Ingrese el número de créditos matriculados: ");
-    var valueToCredit = ConsoleExtension.GetDecimal("Ingrese el valor por cada crédito: ");
+    var credits = ConsoleExtension.GetInt("Ingrese el número de créditos matriculados: ");
+    var creditValue = ConsoleExtension.GetDecimal("Ingrese el valor por cada crédito: ");
     var stratum = ConsoleExtension.GetInt("Ingrese el estrato socioeconómico: ");
-    var valueToPay = CalculateRegistrationValue(quantity, valueToCredit, stratum);
-    decimal subsidy = CalculateSubsidy(stratum);
+    var registrationValue = CalculateRegistrationValue(credits, creditValue, stratum);
+    var subsidy = CalculateSubsidy(stratum);
 
-    Console.WriteLine($"El valor a pagar es: {valueToPay:C2}");
-    Console.WriteLine($"El subsidio es: {subsidy:C2}");
+    Console.WriteLine($"El valor a pagar es: {registrationValue,20:C2}");
+    Console.WriteLine($"El subsidio es.....: {subsidy,20:C2}");
 
     do
     {
         answer = ConsoleExtension.GetValidOptions("¿Deseas continuar [S]í, [N]o?: ", options);
     } while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
 } while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
+Console.WriteLine("Fin del programa.");
 
-decimal CalculateRegistrationValue(float credits, decimal valueUnit, int stratum)
+decimal CalculateRegistrationValue(int credits, decimal valueUnit, int stratum)
 {
     decimal valueUnit1 = valueUnit;
     decimal valueRegistration = 0;
@@ -27,7 +28,7 @@ decimal CalculateRegistrationValue(float credits, decimal valueUnit, int stratum
     while (credits <= 0)
     {
         Console.WriteLine("El número de créditos matriculados no puede ser negativo.");
-        credits = ConsoleExtension.GetFloat("Ingrese el número de créditos matriculados: ");
+        credits = ConsoleExtension.GetInt("Ingrese el número de créditos matriculados: ");
     }
 
     if (credits > 20)
@@ -54,9 +55,7 @@ decimal CalculateRegistrationValue(float credits, decimal valueUnit, int stratum
             discount = 0.3d;
         }
     }
-    valueRegistration = valueRegistration * (1 - (decimal)discount);
-
-    return valueRegistration;
+    return valueRegistration = valueRegistration * (1 - (decimal)discount);
 }
 
 decimal CalculateSubsidy(int stratum)
