@@ -47,6 +47,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10", "10", "{AFD5A495-3B55-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SucesoStore", "SucesoStore\SucesoStore.csproj", "{17136113-7AC6-4571-B268-F93FD7F0B6D4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11", "11", "{F57EB024-A9AD-489A-BACE-88FAA9B7FB83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransportationCompany", "TransportationCompany\TransportationCompany.csproj", "{3C8AC35C-0F73-4A55-8B4B-C4073EF72F19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +101,10 @@ Global
 		{17136113-7AC6-4571-B268-F93FD7F0B6D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17136113-7AC6-4571-B268-F93FD7F0B6D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17136113-7AC6-4571-B268-F93FD7F0B6D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C8AC35C-0F73-4A55-8B4B-C4073EF72F19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C8AC35C-0F73-4A55-8B4B-C4073EF72F19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C8AC35C-0F73-4A55-8B4B-C4073EF72F19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C8AC35C-0F73-4A55-8B4B-C4073EF72F19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -113,6 +121,7 @@ Global
 		{059C02D6-D5A5-48BF-99F3-7D69F5DA2704} = {66F62316-336A-4886-9547-AEA7B57E761B}
 		{B22EDD76-9069-4874-8573-1CB37D3E4012} = {EDB1357E-660B-4BF5-B740-BC5125E5B12E}
 		{17136113-7AC6-4571-B268-F93FD7F0B6D4} = {AFD5A495-3B55-4BEB-9AE7-FAA5BAC69AF1}
+		{3C8AC35C-0F73-4A55-8B4B-C4073EF72F19} = {F57EB024-A9AD-489A-BACE-88FAA9B7FB83}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B27A7D15-16BD-4E90-B1C3-2315350F897B}
