@@ -1,5 +1,4 @@
 ﻿using Shared;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 var answer = string.Empty;
 var options = new List<string> { "s", "n" };
