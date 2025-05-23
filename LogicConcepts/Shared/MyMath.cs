@@ -38,7 +38,7 @@ public class MyMath
         {
             if (n % i == 0)
             {
-                Console.WriteLine($"{n} no es primo.");
+                //Console.WriteLine($"{n} no es primo.");
                 return false;
             }
         }
