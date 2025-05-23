@@ -22,7 +22,7 @@ do
         c = d;
         sum += c;
     }
-    Console.WriteLine($"\nLa suma es: {sum:N0}");
+    Console.WriteLine($"\nLa sumatoria es: {sum:N0}");
     do
     {
         answer = ConsoleExtension.GetValidOptions("¿Deseas continuar [S]í, [N]o?: ", options);
