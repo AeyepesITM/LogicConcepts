@@ -111,6 +111,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "26", "26", "{6E8A8A9E-BE0A-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecialOrderArray", "SpecialOrderArray\SpecialOrderArray.csproj", "{536925EB-B1F4-4E83-A61D-F650A87FC167}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "27", "27", "{77818D69-3708-4F39-80A0-A35F30C7A642}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromePhrases", "PalindromePhrases\PalindromePhrases.csproj", "{77C4413D-8423-4862-AEE5-C086EFED627A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -225,6 +229,10 @@ Global
 		{536925EB-B1F4-4E83-A61D-F650A87FC167}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{536925EB-B1F4-4E83-A61D-F650A87FC167}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{536925EB-B1F4-4E83-A61D-F650A87FC167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77C4413D-8423-4862-AEE5-C086EFED627A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77C4413D-8423-4862-AEE5-C086EFED627A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77C4413D-8423-4862-AEE5-C086EFED627A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77C4413D-8423-4862-AEE5-C086EFED627A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -257,6 +265,7 @@ Global
 		{A94F639B-99EF-46D7-98C0-5BC09DB82C9C} = {1C26463A-2431-4A8A-B256-4599BFDB12FC}
 		{E7D39F03-83CC-48F4-9FDA-3B5E03F91487} = {803BF980-152D-46C7-BF4E-FE2B7445D9F9}
 		{536925EB-B1F4-4E83-A61D-F650A87FC167} = {6E8A8A9E-BE0A-4DB1-8822-49397E9D0134}
+		{77C4413D-8423-4862-AEE5-C086EFED627A} = {77818D69-3708-4F39-80A0-A35F30C7A642}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B27A7D15-16BD-4E90-B1C3-2315350F897B}
