@@ -22,14 +22,11 @@ do
         message = "va a ser";
     }
 
-    if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0))
-    {
-        Console.WriteLine($"El año {year} {message} un año bisiesto.");
-    }
-    else
-    {
-        Console.WriteLine($"El año {year} no {message} un año bisiesto.");
-    }
+    var isLeapYear = DateUtilities.IsLeapYear(year);
+    // Check if the year is a leap year
+
+    Console.WriteLine($"El año {year} {(isLeapYear ? "si " : "no ")}{message} un año bisiesto.");
+
     do
     {
         answer = ConsoleExtension.GetValidOptions("¿Deseas continuar [S]í, [N]o?: ", options);
